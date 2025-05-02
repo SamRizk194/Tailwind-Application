@@ -6,7 +6,7 @@ function Header() {
     window.addEventListener("scroll", () => {
       if (scrollY > 100) {
         headRef.current.style.background = "#0c1524";
-        headRef.current.style.padding = "20px 0";
+        headRef.current.style.padding = "20px 30px";
       } else {
         headRef.current.style.background = "transparent";
         headRef.current.style.padding = "60px";
