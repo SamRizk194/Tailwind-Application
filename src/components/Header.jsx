@@ -20,11 +20,7 @@ function Header() {
     >
       <div className="container mx-auto flex justify-between items-center gap-[30px] sm:gap-0 flex-col sm:flex-row">
         <a href="/">
-          <img
-            src="../../src/assets/images/logo.svg"
-            alt="logo"
-            className="bg-"
-          />
+          <img src="/src/assets/images/logo.svg" alt="logo" className="bg-" />
         </a>
         <nav>
           <ul className="flex gap-[50px]">
