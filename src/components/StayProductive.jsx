@@ -3,22 +3,22 @@ import StayProductiveImg from "/src/assets/images/illustration-stay-productive.p
 function StayProductive() {
   return (
     <section>
-      <div className="container pb-[150px] grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center">
+      <div className="md:mx-[70px] container pb-[250px] grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center">
         <div>
           <img src={StayProductiveImg} alt="stay-img" />
         </div>
         <div>
-          <h3 className="text-white font-medium text-[35px] leading-[50px]">
+          <h3 className="text-white font-medium text-[35px] leading-[50px] ">
             Stay productive,
             <br />
             wherever you are
           </h3>
           <div className="my-[15px] font-normal text-sm tracking-[0.8px] text-white">
-            <p className="mb-[15px] ">
+            <p className="mb-[15px] md:max-w-[500px]">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
               excepturi incidunt quo deserunt quidem accusamus iure ab earum
             </p>
-            <p>
+            <p className="md:max-w-[500px] ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
               excepturi incidunt quo deserunt quidem accusamus iure ab earum
             </p>
