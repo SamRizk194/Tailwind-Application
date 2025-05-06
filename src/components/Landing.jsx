@@ -5,7 +5,7 @@ function Landing() {
         <div>
           <img
             className="mx-auto"
-            src="/src/assets/images/landing.png"
+            src="../../src/assets/images/landing.png"
             alt="landing"
           />
         </div>
@@ -34,7 +34,7 @@ function Landing() {
       </div>
       <div className="w-[100%] h-[200px]">
         <img
-          src="/src/assets/images/bg-curvy-desktop.svg"
+          src="../../src/assets/images/bg-curvy-desktop.svg"
           className="w-[100%] h-[100%]"
         />
       </div>
