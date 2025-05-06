@@ -1,13 +1,12 @@
+import landing from "../assets/images/landing.png";
+import curvy from "../assets/images/bg-curvy-desktop.svg";
+
 function Landing() {
   return (
     <section className="bg-[#1c2230]">
       <div className="container pt-[200px]">
         <div>
-          <img
-            className="mx-auto"
-            src="../../src/assets/images/landing.png"
-            alt="landing"
-          />
+          <img className="mx-auto" src={landing} alt="landing" />
         </div>
 
         <div className="text-white text-center">
@@ -33,10 +32,7 @@ function Landing() {
         </div>
       </div>
       <div className="w-[100%] h-[200px]">
-        <img
-          src="../../src/assets/images/bg-curvy-desktop.svg"
-          className="w-[100%] h-[100%]"
-        />
+        <img src={curvy} className="w-[100%] h-[100%]" />
       </div>
     </section>
   );

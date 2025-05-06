@@ -1,5 +1,5 @@
 import ArrowImg from "/src/assets/images/icon-arrow.svg";
-import StayProductiveImg from "../../src/assets/images/illustration-stay-productive.png";
+import StayProductiveImg from "../assets/images/illustration-stay-productive.png";
 function StayProductive() {
   return (
     <section>

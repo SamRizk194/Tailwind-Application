@@ -1,5 +1,4 @@
 import { useState } from "react";
-import FeatureBox from "./FeatureBox";
 
 function Features() {
   const [items] = useState([
@@ -29,14 +28,26 @@ function Features() {
     <section className="pb-[150px]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[100px] max-w-[865px] mx-auto">
-          {items.map((item, index) => (
-            <FeatureBox
-              key={index}
-              title={item.title}
-              icon={item.icon}
-              desc={item.desc}
-            />
-          ))}
+          {items.map((item, index) => {
+            const imageUrl = new URL(
+              `../assets/images/${item.icon}`,
+              import.meta.url
+            ).href;
+
+            return (
+              <div key={index} className="text-white flex-col text-center">
+                <img
+                  src={imageUrl}
+                  alt="icon-img"
+                  className="w-[80px] h-[80px] object-contain mx-[auto]"
+                />
+                <h4 className="text-xl font-semibold my-[15px]">
+                  {item.title}
+                </h4>
+                <p className="font-normal text-sm">{item.desc}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

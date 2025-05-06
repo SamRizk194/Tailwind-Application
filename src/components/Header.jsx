@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import logo from "../assets/images/logo.svg";
 
 function Header() {
   const headRef = useRef();
@@ -20,7 +21,7 @@ function Header() {
     >
       <div className="container mx-auto flex justify-between items-center gap-[30px] sm:gap-0 flex-col sm:flex-row">
         <a href="/">
-          <img src="/src/assets/images/logo.svg" alt="logo" className="bg-" />
+          <img src={logo} alt="logo" />
         </a>
         <nav>
           <ul className="flex gap-[50px]">
